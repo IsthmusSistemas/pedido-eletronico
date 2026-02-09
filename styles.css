@@ -392,7 +392,7 @@ input:checked+.slider:before {
 }
 
 .st-value {
-    color: var(--warning-color);
+    color: var(--price-value);
     display: block;
     text-align: right;
 }
