@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Produtos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="controls-container">
+            <div class="toggle-wrapper">
+                <span class="toggle-label">Exibir fotos</span>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-photos" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="toggle-wrapper" style="margin-left: 2rem;">
+                <span class="toggle-label">Exibir selos</span>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-badges" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="table-container">
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th class="col-photo">Foto</th>
+                        <th class="col-code">Código</th>
+                        <th class="col-name">Nome do Produto</th>
+                        <th class="col-brand">Marca</th>
+                        <th class="col-price">Preço</th>
+                        <th class="col-st">ST</th>
+                        <th class="col-final-price">Preço Final</th>
+                        <th class="col-box">Em Caixa</th>
+                        <th class="col-qty">Qtd</th>
+                        <th class="col-action">Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="product-table-body">
+                    <!-- Products will be inserted dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
